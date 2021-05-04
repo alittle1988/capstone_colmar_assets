@@ -1,0 +1,665 @@
+/*universal section*/
+.main {
+    top:64px;
+    position: relative;
+    /*for header*/
+    color: rgb(77, 73,73);
+    font-family: roboto, sans-serif;
+}
+ 
+
+
+
+/*header section*/
+.header{
+    display: flex;
+    position: fixed;
+    height: 64px;
+    top: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: white;
+    
+}
+
+.headerlogo{
+    justify-content: left;
+    align-items: center;
+    height: 32px;
+}
+
+.headermobile{
+    display: none;
+}
+
+.headertitle{
+    height: 32px;
+    justify-content: left;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 24px;
+    display: inline-flex;
+    font-family: Roboto, sans-serif;
+
+   }
+   .colmar{
+       color: rgb(77, 73,73);
+       font-size: 20px;
+   }
+   .academy{
+       color: gray;
+       font-size: 20px;
+   }
+
+.headermenu{
+    display: inline-flex;
+    justify-content: right;
+    padding-right: 24px;
+    
+}
+.headermenu a{
+    text-decoration: none;
+    color: black;
+}
+
+.headermenu p{
+    padding-left: 16px;
+    font-family: roboto, sans-serif;
+    
+}
+
+@media only screen and (max-width:600px){
+
+    .headermobile{
+        display: inline-flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .headermenu{
+        display: none;
+    }
+    .headertitle{
+        display: none;
+    }
+}
+
+/*start here section*/
+
+.starthere{
+    background-color: rgb(221, 221, 221);
+    display: inline-flex;
+    width: 100%;
+}
+
+.starthere img{
+    padding: 32px 24px;
+    width: 60%;
+}
+
+/*Learn Section */
+
+.learn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.learntitle{
+    font-family: roboto, sans-serif;
+    text-align: left;
+
+}
+
+.learntitle h1{
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(77, 73,73);
+}
+
+.learntitle h2{
+    color: rgb(77, 73,73);
+}
+
+.learnbox{
+    width: 75%;
+    background-color:rgb(131, 127, 127);
+    position: relative;
+    bottom: 100px;
+}
+
+.learnboxtext{
+    color: white;
+    margin:  8px 0px;  
+}
+
+@media only screen and (max-width:760px){
+    .starthere{
+        display: block;
+        
+    }
+    .starthere img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .learn{
+        display: block;
+        width: 100%;
+        padding: 0 16px;
+        padding-bottom: 32px;
+        box-sizing: border-box;
+    }
+
+    #learnh1top{
+        padding-top: 32px;
+    }
+    #learnh1bottom{
+        padding-bottom: 32px;
+    }
+
+    .learnbox{
+        display: flex;   
+        margin:  auto;
+        height: 50px;
+        align-items: center;
+        bottom: unset;
+        margin-bottom: 32px; 
+         width: 100%;
+         
+         
+    }
+    .learnboxtext{
+       width: 100%;
+
+    }
+}
+
+
+/* Information Section */
+
+.infosection{
+    display: inline-flex;
+}
+
+/*info left*/
+
+.infoleft{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.infoleft img{
+    width: 93%;
+    padding: 32px 24px;
+}
+
+.infolefttext{
+   padding-left: 24px;
+    text-align: left;
+}
+
+.infolefttext h1{
+    font-family: roboto, sans-serif;
+    margin-bottom: 24px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+ .infolefttext .quote{
+     margin-bottom: 32px;
+     width: 80%;
+     font-size: 20px;
+ }
+
+.infolefttext .eman{
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+.infolefttext .eman a{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width:760px){
+    .infoleft{
+        display: none;
+        
+    }
+}
+
+/*info right*/
+
+.inforight{
+    display: inline-block;
+    width:40%;
+    padding-bottom: 32px;
+    border-left: 1px solid rgb(138, 134, 134);
+}
+
+.infoblock{
+    display: block;
+    width: 65%;
+    margin: auto;
+    width: 50%;
+}
+
+.infoblock h2{
+    margin: 0;
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+}
+
+.infoblock p{
+    margin: 8px 0;
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+}
+
+.orientation{
+    display: inline-flex;
+    border-bottom: 1px solid  rgb(138, 134, 134);
+    height: 33.33%;
+    width: 100%;
+}
+#orientationmobile{
+    display: none;
+}
+
+.inforight img{
+    height: auto;
+    width: 35%;
+    padding: 16px;
+}
+
+.ourcampus{
+    display: inline-flex;
+    border-top: 1px solid  rgb(138, 134, 134);
+    height:33.33%;
+    width: 100%;
+}
+#ourcampusmobile{
+    display: none;
+}
+
+.guestlecture{
+    display: inline-flex;
+    background-color: rgb(221, 221, 221);
+    height: 33.33%;
+    width: 100%;
+    }
+
+    #guestlecturemobile{
+        display: none;
+    }
+
+    @media only screen and (max-width:760px){
+        .infosection{
+            display: inline-block;
+        }   
+        .orientation{
+            display: flex;
+            border: none;
+            height: 75%;
+            flex-wrap: wrap;
+            padding-bottom: 64px;
+
+        }
+
+        .invisimg{
+            display: none;
+        }
+
+        #orientationmobile{
+           width: 100%; 
+           height: 275px ;
+           display: flex;
+           
+        }
+        .inforight{
+            width: 100%;
+            border: none;
+            padding-bottom: 0;
+        }
+        .inforight img{
+           width: 100%;
+        }
+
+        .infoblock{
+           text-align: left;
+           margin: 0;
+           padding-left: 16px;
+           width: 100%;
+        }
+        .ourcampus{
+            display: flex;
+            border: none;
+            height: 75%;
+            flex-wrap: wrap;
+            padding-bottom: 64px;
+            
+        }
+
+        #ourcampusmobile{
+            width: 100%; 
+           height: 275px ;
+           display: flex;
+
+        }
+
+        .guestlecture{
+            display: flex;
+            border: none;
+            height: 75%;
+            flex-wrap: wrap;
+            padding-bottom: 64px;
+            background-color: white;
+
+        }
+
+        #guestlecturemobile{
+            width: 100%; 
+           height: 275px ;
+           display: flex;
+
+        }
+        #guestlecture{
+            padding-bottom: 32px;
+        }
+            
+        
+    }
+    /*Start learning section*/
+
+.startlearning{
+        background-color: rgb(221, 221, 221);
+}
+
+.startlearningtitle{
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    font-family: roboto, sans-serif;
+}
+
+.startlearningtitle h1{
+    margin: 0;
+    font-size: 50px;
+}
+
+.gallery{
+    display: inline-flex;
+    margin: 32px 72px;
+    flex-flow: row wrap;
+}
+
+.galleryrow1{
+    display: inline-flex;
+    margin-bottom: 32px;
+    
+}
+
+.galleryrow2{
+    display: inline-flex;
+    width: 100%;
+    
+    
+}
+
+.startlearning img{
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(187, 187, 187);
+    
+}
+
+.gallerysection{
+    background-color: white;
+    margin-right: 16px;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.textmobile {
+    display: none;
+}
+
+.text{
+    display: block;
+    text-align: left;
+    margin:16px;
+}
+
+.text p{
+    font-size: 18px;
+}
+    
+.text h2{
+    margin: 16px 0;
+}
+
+#text1{
+    margin-bottom:24px;
+}
+
+
+
+@media only screen and (max-width:760px){
+    .startlearning{
+        background-color: white;
+    }
+    .startlearningtitle{
+        padding-bottom: 16px;
+    }
+    .gallery{
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    .gallerysection{
+        display: none;
+    }
+    .textmobile{
+        background-color: rgb(221, 221, 221);
+        display: flex;
+        margin-bottom: 8px;
+    }
+    .textmobile a{
+        text-decoration: none;
+        color: black;
+    }
+    .galleryrow1{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .galleryrow2{
+        display: inline-block;
+    }
+    .gallery h2{
+        text-align: left;
+        padding: 16px 0 24px 16px;
+        margin:0 0 8px 0;
+    }
+}
+
+/*thesis exhibit section*/
+
+
+.thesisexhibittitle{
+    width: 100%;
+    margin: 32px 0;
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+}
+
+.thesisexhibittitle h1{
+    margin: 0;
+    text-align: center;
+}
+
+.thesisbody{
+    display: inline-flex
+}
+
+@media only screen and (max-width:760){
+    .thesisbody{
+        margin-bottom: 24px;
+    }
+    .thesisexhibittitle {
+        margin-bottom: 16px;
+    }
+}
+
+/*thesis exhibit left section*/
+
+.thesisleft{
+    width: 60%;
+    padding: 0 24px 32px 24px;
+}
+
+.thesisleft video{
+    height: 550px;
+}
+
+.thesislefttext h3{
+    margin:24px 0 8px 0 ;
+    font-size: 50px;
+}
+
+.thesislefttext p{
+     margin: 0;
+     font-size: 20px;
+ }
+
+ @media only screen and (max-width:760px){
+     .thesisbody{
+         width: 100%;
+     }
+        .thesisleft{
+            width: 100%;
+            padding: 0 0 24px 0;
+            
+        }
+        .thesisleft video{
+            width: 100%;
+            height: 300px;
+        }
+        .thesislefttext{
+            display: none;
+        }
+ }
+
+/*thesis exhibit right section*/
+
+.thesisright{
+    width: 40%;
+}
+
+.thesisrighttext{
+    display: block;
+    width: 65%;
+}
+
+.thesisright img{
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+
+.fisma{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+}
+
+.fisma h2{
+    font-size: 25px;
+}
+
+.fisma p{
+    font-size: 16px;
+}
+
+.nowandthen{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+
+.nowandthen h2{
+    font-size: 25px;
+}
+
+.nowandthen p {
+    font-size:16px
+}
+
+@media only screen and (max-width:760px){
+    .thesisright{
+        display: none;
+    }
+}
+/*footer section*/
+
+footer{
+    top:64px;
+    position: relative;
+    font-family: roboto, sans-serif;
+}
+
+.footer{
+   border-top: 1px solid rgb(187, 187, 187);
+}
+
+.footerbody{
+    display: inline-flex;
+    width: 100%;
+}
+
+.footerbody a{
+    text-decoration: none;
+    color: black;
+}
+
+.copyright{
+    text-align: left;
+    width: 50%;
+    padding:16px 0 30px 24px ;
+}
+.copyright i{
+    margin-right: 8px;
+}
+
+.footerterms{
+    text-align: right;
+    width: 50%;
+    padding:16px 24px 30px 0;
+}
+
+#padright{
+    padding-right: 10px;
+}
+    
+
+@media only screen and (max-width:760px){
+    .footer{
+        border: none;
+    }
+    .footerterms{
+        display: none;
+    }
+    .copyright{
+        width: 100%;
+        padding:16px 0 16px 16px;
+    }
+}
